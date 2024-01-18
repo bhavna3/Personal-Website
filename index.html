@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Bhavana Moothkuri</title>
+</head>
+<body>
+    <header>
+        <h1>Bhavana</h1>
+        <p>
+            Self-starter and passionate second year Computer Science student with experience in programming outside the university courses and ability to learn other coding languages as needed. Aspiring to apply my knowledge gained from both coursework and personal projects to real-world challenges. 
+        </p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/bhavna3/GitHub-Web-Scraper">GitHub Web Scraper</a>
+                : A Python web scraping tool for extracting information about trending repositories on GitHub.
+            </li>
+            <li><a href="#">Personal Website</a></li>
+            
+        </ul>
+    </section>
+
+    <section id="Socials">
+        <h2>Socials</h2>
+        <p>GitHub: <a href="https://github.com/bhavna3" target="_blank">@bhavna3</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bhavana-moothkuri/" target="_blank">BhavanaMoothkuri</a></p>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bhavana Moothkuri. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
+</body>
+</html>
