@@ -3,172 +3,172 @@
     <head>
         <title>Bhavana Moothkuri</title>
         <style>
-            /* Common styles for both light and dark modes */
             body {
                 transition: background-color 0.5s ease;
-                color: #333; /* Default text color */
+                color: #333333;
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
             }
-            
-            header, section, footer {
+
+            header,
+            section,
+            footer {
                 padding: 20px;
                 margin: 10px 0;
-                border-radius: 10px;
-                color: inherit; /* Inherit text color */
+                border-radius: 15px; /* Changed from 100px to 15px */
+                color: inherit;
             }
-    
+
             a {
-                color: #007bff; /* Default link color */
+                color: #007bff;
                 text-decoration: none;
                 transition: color 0.3s ease;
             }
-    
+
             a:hover {
-                color: #0056b3; /* Link color on hover */
+                color: #0056b3;
             }
-    
+
             button {
                 padding: 10px 20px;
                 border: none;
-                border-radius: 5px;
+                border-radius: 20px;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
             }
-    
+
             button:hover {
                 background-color: #f0f0f0;
             }
-    
-            /* Dark mode specific styles */
+
             body.dark-mode {
                 background-color: #333;
-                color: #fff; /* Text color in dark mode */
+                color: #fff;
             }
-    
-            body.dark-mode header, 
-            body.dark-mode section, 
+
+            body.dark-mode header,
+            body.dark-mode section,
             body.dark-mode footer {
                 background-color: #444;
             }
-    
+
             body.dark-mode a {
-                color: #4bb8e6; /* Link color in dark mode */
+                color: #4bb8e6;
             }
-    
-            /* Themes */
+
             .theme1 {
-                background-color: #f7f7f7;
+                background-color: #f2eded;
             }
-    
+
             .theme2 {
-                background-color: #f2f2f2;
+                background-color: #fdc9c9;
             }
-    
+
             .theme3 {
-                background-color: #ebebeb;
+                background-color: #a9a9a9;
             }
-    
-            /* Animations */
+
             @keyframes fadeIn {
-                from { opacity: 0; }
-                to { opacity: 1; }
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
             }
-    
+
             .fadeIn {
                 animation: fadeIn 1s ease;
             }
         </style>
     </head>
-<body>
-    <div style="text-align: center; margin-bottom: 20px;">
-        <button onclick="setTheme('theme1')" class="theme1">Theme 1</button>
-        <button onclick="setTheme('theme2')" class="theme2">Theme 2</button>
-        <button onclick="setTheme('theme3')" class="theme3">Theme 3</button>
-    </div>
+    <body>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <button onclick="setTheme('theme1')" class="theme1">Theme 1</button>
+            <button onclick="setTheme('theme2')" class="theme2">Theme 2</button>
+            <button onclick="setTheme('theme3')" class="theme3">Theme 3</button>
+        </div>
 
-    <!-- Dark mode toggle button -->
-    <div style="text-align: center; margin-bottom: 20px;">
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    </div>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
 
-    <header>
-        <h1>Bhavana</h1>
-        <p>
-            Learning how to code. Graduating in 2026 with bachelore's degree in Artificial Intelligence and Machine Learning. I'm working on integrating AI into web technologies.
-        </p>
-        <ul>
-            <li><a href=" ">Reading Log</a></li>
-            <li><a href=" ">Blog</a></li>
-        </ul>
-    </header>
+        <header>
+            <h1>Bhavana</h1>
+            <p>
+                Learning how to code. Majoring in Artificial Intelligence and Machine Learning. I'm working on integrating AI into web technologies.
+            </p>
+            <ul>
+                <li><a href="/readinglog.html">Reading Log</a></li>
+                <li><a href="/blog.html">Blog</a></li> <!-- Removed extra space -->
+            </ul>
+        </header>
 
-    <section id="essay">
-        <h2>Essays</h2>
-        <ul>
-            <li><a href=" ">entropy</a></li>
-            <li><a href=" ">chaos</a></li>
-        </ul>
-    </section>
+        <section id="essay">
+            <h2>Essays</h2>
+            <ul>
+                <li><a href="/entropy.html">entropy</a></li>
+                <li><a href="/chaos.html">chaos</a></li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/bhavna3/GitHub-Web-Scraper">GitHub Web Scraper</a>
-                : A Python web scraping tool for extracting information about trending repositories on GitHub.
-            </li>
-            <li><a href="https://personal-website-bhavana.vercel.app/">Personal Website</a>
-                : Designed and implemented a personal website using HTML, CSS, and JavaScript.
-            </li>
-            <li><a href="https://github.com/bhavna3/Movie-Recommendation-System">Movie-Recommendation-System</a>
-                : Developed content-based movie recommender system using Python and Jupyter Notebook.
-            </li>
-        </ul>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/bhavna3/GitHub-Web-Scraper">GitHub Web Scraper</a>
+                    : A Python web scraping tool for extracting information about trending repositories on GitHub.
+                </li>
+                <li><a href="https://personal-website-bhavana.vercel.app/">Personal Website</a>
+                    : Designed and implemented a personal website using HTML, CSS, and JavaScript.
+                </li>
+                <li><a href="https://github.com/bhavna3/Movie-Recommendation-System">Movie-Recommendation-System</a>
+                    : Developed content-based movie recommender system using Python and Jupyter Notebook.
+                </li>
+            </ul>
+        </section>
 
-    <section id="skill">
-        <h2>Skills</h2>
-        <ul>
-            <li>primary programming: python, R, java, SQL</li>
-            <li>Secondary programming: javascript, HTML, CSS </li>
-        </ul>
-    </section>   
+        <section id="skill">
+            <h2>Skills</h2>
+            <ul>
+                <li>primary programming: python, R, java, SQL</li>
+                <li>Secondary programming: javascript, HTML, CSS </li>
+            </ul>
+        </section>
 
-    <section id="Socials">
-        <h2>Socials</h2>
-        <ul>
-            <li>GitHub: <a href="https://github.com/bhavna3" target="_blank">@bhavna3</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/bhavana-moothkuri/" target="_blank">BhavanaMoothkuri</a></li>
-            <li>Twitter: <a href=" " target="_blank">bhavna</a></li>
-            <li>Instagram: <a href=" " target="_blank">@bhavna</a></li>
-            <li>Youtube: <a href=" " target="_blank">bhavna</a></li>
-        </ul>
-    </section>
+        <section id="Socials">
+            <h2>Socials</h2>
+            <ul>
+                <li>GitHub: <a href="https://github.com/bhavna3" target="_blank">@bhavna3</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/bhavana-moothkuri/" target="_blank">BhavanaMoothkuri</a></li>
+                <li>Twitter: <a href="#" target="_blank">bhavna</a></li> <!-- Removed extra space -->
+                <li>Instagram: <a href="#" target="_blank">@bhavna</a></li> <!-- Removed extra space -->
+                <li>Youtube: <a href="#" target="_blank">bhavna</a></li> <!-- Removed extra space -->
+            </ul>
+        </section>
 
-    <section id="Progress">
-        <h2>2024 Highlights</h2>
-        <ul>
-            <li>100 days of coding</li>
-            <li>Research Assistance at college </li>
-        </ul>
-    </section>
-    
-    <p><a href=" ">Buy me a book</a></p>
+        <section id="Progress">
+            <h2>2024 Highlights</h2>
+            <ul>
+                <li>100 days of coding</li>
+                <li>Research Assistance </li>
+            </ul>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Bhavana Moothkuri.</p>
-    </footer>
-    <script>
-        function toggleDarkMode() {
-            const body = document.body;
-            body.classList.toggle('dark-mode');
-        }
-        function setTheme(themeName) {
-            const body = document.body;
-            body.className = themeName;
-        }
-    </script>
+        <p><a href="#">Buy me a book</a></p> <!-- Added placeholder href -->
 
-</body>
+        <footer>
+            <p>&copy; 2024 Bhavana Moothkuri.</p>
+        </footer>
+        <script>
+            function toggleDarkMode() {
+                const body = document.body;
+                body.classList.toggle('dark-mode');
+            }
+            function setTheme(themeName) {
+                const body = document.body;
+                body.className = themeName;
+            }
+        </script>
+    </body>
 </html>
